@@ -8,9 +8,9 @@
    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   
    <link href="../static/index.css" rel="stylesheet" type="text/css" >
-
 
 </head>
 
@@ -22,7 +22,7 @@
                 <ul class="nav nav-pills pull-right">
                     <li role="presentation" class="active"><a href="#">Home</a>
                     </li>
-                    <li role="presentation"><a href="http://www.facebook.com">Sign In</a>
+                    <li role="presentation"><a href="/sign_in">Sign In</a>
                     </li>
                     <li role="presentation"><a href="showSignUp">Sign Up</a>
                     </li>
@@ -32,11 +32,24 @@
         </div>
 
         <div class="jumbotron">
-           <h1>Companionate Pet Sharing Service</h1>
+	<h1>Companionate </h1>
+	<h3>Premium Pet Sharing Service</h3>
            <p class="lead"></p>
            <p><a id="sup" class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
            </p>
-       </div>
+	</div>
+
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Pet Type
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Dog</a>
+			<a class="dropdown-item" href="#">Cat</a>
+			<a class="dropdown-item" href="#">Fish</a>
+			<a class="dropdown-item" href="#">Other</a>
+		</div>
+	</div>
 
        <div class="row marketing">
           <div class="col-lg-6">
@@ -67,6 +80,16 @@
 </footer>
 
 </div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
 
 </html>
