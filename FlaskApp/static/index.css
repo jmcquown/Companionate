@@ -9,7 +9,7 @@
     margin-bottom: 50px;
 }
 #header-text {
-    position:relative;
+    position: absolute;
     left:20px;
 }
 .jumbotron {
