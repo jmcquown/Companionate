@@ -6,19 +6,26 @@ html, body {
     background-color: #75d9ef;
     border-color: #75d9ef;
 }
-.header {
+.header, .footer {
     position:absolute;
     left:0;
     right:0;
-    margin-bottom: 50px;
+    max-height: 60px;
 }
 #header-text {
     position: absolute;
     left:20px;
     top:7.5px;
+    color: #75d9ef;
 }
 #header-buttons {
-    
+    padding-top: 10px;
+}
+#home-button {
+    background-color: #75d9ef;
+}
+.sign-buttons {
+    color: #75d9ef;
 }
 .jumbotron {
     float:left;
@@ -26,4 +33,3 @@ html, body {
     position: relative;
     margin-top: 80px;
 }
-

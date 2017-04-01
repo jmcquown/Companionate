@@ -5,7 +5,9 @@
    <title>Companionate</title>
 
 
-   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 
@@ -19,12 +21,12 @@
     <div class="container">
         <div class="header">
             <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a>
+                <ul id="header-buttons" class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a id="home-button" href="#">Home</a>
                     </li>
-                    <li role="presentation"><a href="/sign_in">Sign In</a>
+                    <li role="presentation"><a class="sign-buttons" href="/sign_in">Sign In</a>
                     </li>
-                    <li role="presentation"><a href="showSignUp">Sign Up</a>
+                    <li role="presentation"><a class="sign-buttons" href="showSignUp">Sign Up</a>
                     </li>
                 </ul>
             </nav>
