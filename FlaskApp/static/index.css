@@ -1,0 +1,21 @@
+#sup {
+    background-color: #75d9ef;
+    border-color: #75d9ef;
+}
+.header {
+    position:absolute;
+    left:0;
+    right:0;
+    margin-bottom: 50px;
+}
+#header-text {
+    position: absolute;
+    left:20px;
+}
+.jumbotron {
+    float:left;
+    clear:both;
+    position: relative;
+    margin-top: 80px;
+}
+
