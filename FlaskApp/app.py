@@ -9,5 +9,9 @@ def main():
 def sign_in():
 	return render_template('sign_in.html')
 
+@app.route("/view_pets")
+def view_pets():
+    return render_template('view_pets.html')
+
 if __name__ == "__main__":
     app.run()
