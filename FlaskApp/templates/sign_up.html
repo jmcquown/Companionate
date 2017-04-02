@@ -39,7 +39,7 @@
         <!-- Registration form - START -->
         <div class="container">
             <div class="row">
-                <form role="form">
+                <form role="form" method=POST action="{{ url_for('sign_up') }}">
                     <div class="col-lg-6">
                         <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></div>
                         <div class="form-group">
@@ -73,21 +73,21 @@
                         <div class="form-group">
                             <label for="InputStreetAddress">Enter Street Address</label>
                             <div class="input-group">
-                                <input name="text" class="form-control" id="InputStreetAddress" placeholder="Enter street address" required></input>
+                                <input name="InputStreetAddress" class="form-control" id="InputStreetAddress" placeholder="Enter street address" required></input>
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="InputCityAddress">Enter City</label>
                             <div class="input-group">
-                                <input name="text" id="InputCityAddress" class="form-control" placeholder="Enter city address" required></input>
+                                <input name="InputCityAddress" id="InputCityAddress" class="form-control" placeholder="Enter city address" required></input>
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                             </div>
  <!--                        </div>
                         <div class="form-group"> -->
                             <label for="InputZipcode">Enter Zipcode</label>
                             <div class="input-group">
-                                <input name="text" id="InputZipcode" class="form-control" placeholder="Enter zipcode" required></input>
+                                <input name="InputZipcode" id="InputZipcode" class="form-control" placeholder="Enter zipcode" required></input>
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                         <div class="form-group">
                             <label for="InputTel">Enter Phone Number</label>
                             <div class="input-group">
-                                <input type="tel" class="form-control" id="InputTel" placeholder="Enter phone number" required>
+                                <input name="InputPhone" type="tel" class="form-control" id="InputTel" placeholder="Enter phone number" required>
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                             </div>
                         </div>
