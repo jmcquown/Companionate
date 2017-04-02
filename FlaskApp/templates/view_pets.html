@@ -83,6 +83,8 @@
                 var oakridge = {lat: 40.772692, lng:-74.2521097};
                 var rutgers = {lat: 40.5008227, lng:-74.4495878};
                 var springLake = {lat: 40.1537463, lng: -74.0447293};
+                var erie = {lat:42.1153482, lng:-80.1409869};
+                var mcgill = {lat: 45.5047884, lng:-73.5793398};
                 var map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 4,
                   center: princeton
@@ -101,6 +103,14 @@
               });
                 var marker = new google.maps.Marker({
                   position: springLake,
+                  map: map
+              });
+                var marker = new google.maps.Marker({
+                  position: erie,
+                  map: map
+              });
+                   var marker = new google.maps.Marker({
+                  position: mcgill,
                   map: map
               });
             }
