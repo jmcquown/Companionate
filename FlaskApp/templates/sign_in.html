@@ -56,6 +56,15 @@
           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="username" required autofocus>
           <label for="inputPassword" class="sr-only">Password</label>
           <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+          {%with messages = get_flashed_messages() %}
+          {% if messages %}
+          <ul class=flashes>
+          {% for message in messages %}
+            <p style="color:red;">{{ message }}</p>
+          {% endfor %}
+          </ul>
+          {% endif %}
+          {% endwith %}
           <div class="checkbox">
             <label>
               <input type="checkbox" value="remember-me"> Remember me
