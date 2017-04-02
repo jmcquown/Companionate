@@ -1,96 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <title>Companionate</title>
-
-
-   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
-   <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-   
-   <link href="../static/index.css" rel="stylesheet" type="text/css" >
-
-</head>
-
-<body>
-
-    <div class="container">
-        <div class="header">
-            <nav>
-                <ul id="header-buttons" class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a id="home-button" href="#">Home</a>
-                    </li>
-                    <li role="presentation"><a class="sign-buttons" href="/sign_in">Sign In</a>
-                    </li>
-                    <li role="presentation"><a class="sign-buttons" href="showSignUp">Sign Up</a>
-                    </li>
+    <head>
+        <title>Companionate</title>
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+        <link href="../static/index.css" rel="stylesheet" type="text/css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <nav>
+                    <ul id="header-buttons" class="nav nav-pills pull-right">
+                        <li role="presentation" class="active"><a id="home-button" href="#">Home</a>
+                        </li>
+                        <li role="presentation"><a class="sign-buttons" href="/sign_in">Sign In</a>
+                        </li>
+                        <li role="presentation"><a class="sign-buttons" href="showSignUp">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h3 id="header-text" class="text-muted">Companionate</h3>
+            </div>
+            <div class="jumbotron">
+                <h1>Companionate </h1>
+                <h3>Premium Pet Sharing Service</h3>
+                <p class="lead"></p>
+                <p><a id="sup" class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
+                </p>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="true">
+                Pet Type<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="#">Dog</a>
+                    <li><a class="dropdown-item" href="#">Cat</a>
+                    <li><a class="dropdown-item" href="#">Fish</a>
+                    <li><a class="dropdown-item" href="#">Other</a>
                 </ul>
-            </nav>
-            <h3 id="header-text" class="text-muted">Companionate</h3>
+            </div>
+            <div class="row marketing">
+                <div class="col-lg-6">
+                    <h4>Bucket List</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                    <h4>Bucket List</h4>
+                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <h4>Bucket List</h4>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Bucket List</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                    <h4>Bucket List</h4>
+                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <h4>Bucket List</h4>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; Companionate 2017</p>
+            </footer>
         </div>
-
-        <div class="jumbotron">
-	<h1>Companionate </h1>
-	<h3>Premium Pet Sharing Service</h3>
-           <p class="lead"></p>
-           <p><a id="sup" class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
-           </p>
-	</div>
-
-	<div class="dropdown">
-		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		Pet Type
-		</button>
-		<div class="dropdown-menu">
-			<a class="dropdown-item" href="#">Dog</a>
-			<a class="dropdown-item" href="#">Cat</a>
-			<a class="dropdown-item" href="#">Fish</a>
-			<a class="dropdown-item" href="#">Other</a>
-		</div>
-	</div>
-
-       <div class="row marketing">
-          <div class="col-lg-6">
-              <h4>Bucket List</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-              <h4>Bucket List</h4>
-              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-              <h4>Bucket List</h4>
-              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          </div>
-
-          <div class="col-lg-6">
-           <h4>Bucket List</h4>
-           <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-           <h4>Bucket List</h4>
-           <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-           <h4>Bucket List</h4>
-           <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-       </div>
-   </div>
-
-   <footer class="footer">
-    <p>&copy; Companionate 2017</p>
-</footer>
-
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-
-
-
-
-</body>
-
+    </body>
 </html>
-
