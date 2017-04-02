@@ -17,7 +17,7 @@ def index():
     # if 'username' in session:
         # return "fuck"
         # return 'You are logged in as ' + session['username']
-	return render_template('index.html')
+    return render_template('index.html')
 
 @app.route("/sign_in")
 def sign_in():
@@ -39,8 +39,18 @@ def login():
 def view_pets():
     return render_template('view_pets.html')
 
-@app.route("/sign_up")
+@app.route("/sign_up", methods=['POST', 'GET'])
 def sign_up():
+    if request.method == 'POST':
+        users = mongo.db.users
+        existing_user = users.find_one({'name' : request.form['InputEmail']})
+
+        if existing_user is None:
+            hashpass = bcrypt.hashpw(request.form['InputPassword'].encode('utf-8'), bcrypt.gensalt())
+            users.insert({'name' : request.form['InputEmail'], 'password' : hashpass, 'street' : request.form['InputStreetAddress'], 'city' : request.form['InputCityAddress'], 'zip' : request.form['InputZipcode'], 'phone' : request.form['InputPhone']})
+            session['username'] = request.form['InputEmail']
+            return redirect(url_for('index'))
+
     return render_template('sign_up.html')
 
 if __name__ == "__main__":
