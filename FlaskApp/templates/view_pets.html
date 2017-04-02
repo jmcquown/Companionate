@@ -49,57 +49,71 @@
             </nav>
             <h3 id="header-text" class="text-muted">Companionate</h3>
         </div>
+
         </br>
         </br>
         </br>
         </br>
 
-        <div class="row">
+    </br>
 
-            <div class="col-md-2">
-                <p class="lead">Pets Available</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Dogs</a>
-                    <a href="#" class="list-group-item">Cats</a>
-                    <a href="#" class="list-group-item">Fish</a>
-                    <a href="#" class="list-group-item">Rock</a>
-                    <a href="#" class="list-group-item">Other</a>
-                </div>
+    <div class="row">
+        <div class="col-md-2">
+            <p class="lead">Pets Available</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item">Dogs</a>
+                <a href="#" class="list-group-item">Cats</a>
+                <a href="#" class="list-group-item">Fish</a>
+                <a href="#" class="list-group-item">Rock</a>
+                <a href="#" class="list-group-item">Other</a>
+
             </div>
+        </div>
 
-            <div class="col-md-9">
+        <div class="col-md-9">
 
-                <!-- MAP SECTION BEGINS -->
+            <!-- MAP SECTION BEGINS -->
 
-               <!--  <h3>Pets Available Around Specified Location</h3> -->
-                <div id="map"></div>
-                <script>
-                  function initMap() {
-                    var uluru = {lat: -25.363, lng: 131.044};
-                     var uluru2 = {lat: -25.363, lng: 131.235};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 4,
-                      center: uluru
-                  });
-                    var marker = new google.maps.Marker({
-                      position: uluru,
-                      map: map
-                  });
-                    var marker2 = new google.maps.Marker({
-                        position: uluru2,
-                        map: map
-                    });
-                }
-            </script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsgfcdK7-QlJ6bHrLAwvLb-vwXZ8zNXmw&callback=initMap">
+            <!--  <h3>Pets Available Around Specified Location</h3> -->
+            <div id="map"></div>
+            <script>
+              function initMap() {
+
+                var princeton = {lat: 40.344184, lng:-74.6530418};
+                var oakridge = {lat: 40.772692, lng:-74.2521097};
+                var rutgers = {lat: 40.5008227, lng:-74.4495878};
+                var springLake = {lat: 40.1537463, lng: -74.0447293};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: princeton
+              });
+                var marker = new google.maps.Marker({
+                  position: princeton,
+                  map: map
+              });
+                var marker = new google.maps.Marker({
+                  position: oakridge,
+                  map: map
+              });
+                var marker = new google.maps.Marker({
+                  position: rutgers,
+                  map: map
+              });
+                var marker = new google.maps.Marker({
+                  position: springLake,
+                  map: map
+              });
+            }
         </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsgfcdK7-QlJ6bHrLAwvLb-vwXZ8zNXmw&callback=initMap">
+    </script>
 
-           </div>
-           </div>
+</div>
+</div>
 
-        <!-- MAP SECTION ENDS -->
-        </br>
+<!-- MAP SECTION ENDS -->
+</br>
 
 
 
@@ -109,12 +123,12 @@
         <div class="thumbnail">
             <img src="http://placehold.it/320x150" alt="">
             <div class="caption">
-             <!--                      <h4 class="pull-right">$24.99</h4> -->
-             <h4><a href="#">First Product</a>
-             </h4>
-             <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-         </div>
-         <div class="ratings">
+               <!--                      <h4 class="pull-right">$24.99</h4> -->
+               <h4><a href="#">First Product</a>
+               </h4>
+               <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+           </div>
+           <div class="ratings">
             <p class="pull-right">15 reviews</p>
             <p>
                 <span class="glyphicon glyphicon-star"></span>
@@ -237,11 +251,7 @@
     </div>
 </div>
 
-</div>
-
-
-</div>
-<!-- /.container -->
+    <!-- /.container -->
 
 <div class="container">
 
