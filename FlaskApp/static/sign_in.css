@@ -1,5 +1,5 @@
 #sign_in {
-    background-color: #75d9ef;
+    background-color:  #75d9ef;
     border-color: #75d9ef;
 }
 #header-buttons {
@@ -25,7 +25,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #f5ebdc;  /* OVERALL PAGE BACKGROUND COLOR */
+    background-color: #dbf0f4;  /* OVERALL PAGE BACKGROUND COLOR */
 }
 .form-signin {
     margin-top:40px;
