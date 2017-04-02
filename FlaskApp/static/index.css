@@ -1,7 +1,7 @@
 html, body {
     margin:0;
     padding:0;
-    background-color: #faebd7;  /* OVERALL PAGE BACKGROUND COLOR */
+    background-color: #dbf0f4; /* #eff7f9;*/ /* #dbf0f4; */ /*#ceedf4;*/  /* OVERALL PAGE BACKGROUND COLOR */
 }
 #sup {
     background-color: #75d9ef;
@@ -12,6 +12,7 @@ html, body {
     left:0;
     right:0;
     max-height: 60px;
+    background-color:  #ffffff;
 }
 #header-text {
     position: absolute;
@@ -33,6 +34,7 @@ html, body {
     clear:both;
     position: relative;
     margin-top: 80px;
+    background-color: #ffffff;
 }
 #copyright {
     padding: 0 0 0 20px;
