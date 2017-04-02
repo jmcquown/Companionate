@@ -31,7 +31,7 @@ def login():
     if login_user:
         if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
             session['username'] = request.form['username']
-            return redirect(url_for('index'))
+            return render_template('view_pets.html')
     flash(Markup("Invalid username/password"))
     return redirect(url_for('sign_in'))
 
