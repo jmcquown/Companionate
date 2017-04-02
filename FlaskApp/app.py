@@ -7,14 +7,22 @@ app = Flask(__name__)
 mongo = PyMongo(app)
 
 @app.route("/")
-def main():
+def index():
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 	return render_template('index.html')
 
-@app.route("/sign_in")
+@app.route("/sign_in", methods=['POST'])
 def sign_in():
-	return render_template('sign_in.html')
+    users = mongo.db.users
+    login_user = user.find_one({'name' : request.form['username']})
+
+    if login_user:
+        if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].enconde('utf-8')) == ogin_user['password'].encode('utf-8'):
+            session['username'] = request.form['username']
+            return redirect(url_for('index'))
+
+	return 'Invalid username/password combination'
 
 @app.route("/view_pets")
 def view_pets():
