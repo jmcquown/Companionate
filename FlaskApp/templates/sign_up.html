@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Companionate Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../sign_up/font-awesome.min.css" />
+    <link href="../static/sign_up.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../sign_up/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="header">
+          <nav>
+            <ul id="header-buttons" class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a id="home-button" href="/">Home</a>
+              </li>
+              <li role="presentation"><a class="sign-buttons" href="/sign_in">Sign In</a>
+              </li>
+              <li role="presentation"><a class="sign-buttons" href="/sign_up">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+          <h3 id="header-text" class="text-muted">Companionate</h3>
+        </div>
+
+        </br>
+
+        <div class="page-header">
+            <h1>Companionate Sign (P)Up </h1>
+        </div>
+
+        <!-- Registration form - START -->
+        <div class="container">
+            <div class="row">
+                <form role="form">
+                    <div class="col-lg-6">
+                        <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></div>
+                        <div class="form-group">
+                            <label for="InputName">Enter Name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">Enter Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="InputEmailFirst" name="InputEmail" placeholder="Enter Email" required>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">Confirm Email</label>
+                            <div class="input-group">
+                            <input type="email" class="form-control" id="InputEmailSecond" name="InputEmail" placeholder="Confirm Email" required></input>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputStreetAddress">Enter street address</label>
+                            <div class="input-group">
+                                <input name="text" class="form-control" id="InputStreetAddress" placeholder="Enter street address" required></input>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputCityAddress">Enter city address</label>
+                            <div class="input-group">
+                                <input name="text" id="InputCityAddress" class="form-control" placeholder="Enter city address" required></input>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+ <!--                        </div>
+                        <div class="form-group"> -->
+                            <label for="InputZipcode">Enter zipcode</label>
+                            <div class="input-group">
+                                <input name="text" id="InputZipcode" class="form-control" placeholder="Enter zipcode" required></input>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputTel">Enter phone number</label>
+                            <div class="input-group">
+                                <input type="tel" class="form-control" id="InputTel" placeholder="Enter phone number" required>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+
+                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                    </div>
+                </form>
+                <div class="col-lg-5 col-md-push-1">
+                    <div class="col-md-12">
+                        <div class="alert alert-success">
+                            <strong><span class="glyphicon glyphicon-ok"></span> Success! Message sent.</strong>
+                        </div>
+                        <div class="alert alert-danger">
+                            <span class="glyphicon glyphicon-remove"></span><strong> Error! Please check all page inputs.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Registration form - END -->
+         <footer class="footer">
+          <p>&copy; Companionate 2017</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
