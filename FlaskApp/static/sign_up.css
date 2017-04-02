@@ -1,6 +1,30 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 
+.header, .footer {
+    position:absolute;
+    left:0;
+    right:0;
+    max-height: 60px;
+    background-color: #ffffff;
+}
+#header-buttons {
+    padding-top: 10px;
+}
+#header-text {
+    position: absolute;
+    left:20px;
+    color: #75d9ef;
+}
+
+#home-button {
+    background-color: #75d9ef;
+}
+
+.sign-buttons {
+    color: #75d9ef;
+}
+
 body {
     background: #fff;
     font-family: 'Roboto', sans-serif;
@@ -8,14 +32,14 @@ body {
     background-color: #dbf0f4;  /* OVERALL PAGE BACKGROUND COLOR */
     line-height: 22px;  
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     color:#111;
     margin-top:5px;
     margin-bottom:5px;
 }
-h1, h2, h3 {
+h1, h2{
     text-transform:uppercase;
 }
 
