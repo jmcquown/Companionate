@@ -2,3 +2,34 @@
     background-color: #75d9ef;
     border-color: #75d9ef;
 }
+#header-buttons {
+    padding-top: 10px;
+}
+#header-text {
+    position: absolute;
+    left:20px;
+    color: #75d9ef;
+}
+.header, .footer {
+    position:absolute;
+    left:0;
+    right:0;
+    max-height: 60px;
+}
+#home-button {
+    background-color: #75d9ef;
+}
+.sign-buttons {
+    color: #75d9ef;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.form-signin {
+    margin-top:40px;
+}
+p {
+    padding: 0 0 0 20px;
+}
