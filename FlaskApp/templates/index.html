@@ -1,68 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Companionate</title>
-        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
-        <link href="../static/index.css" rel="stylesheet" type="text/css" >
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <nav>
-                    <ul id="header-buttons" class="nav nav-pills pull-right">
-                        <li role="presentation" class="active"><a id="home-button" href="#">Home</a>
-                        </li>
-                        <li role="presentation"><a class="sign-buttons" href="/sign_in">Sign In</a>
-                        </li>
-                        <li role="presentation"><a class="sign-buttons" href="showSignUp">Sign Up</a>
-                        </li>
-                    </ul>
-                </nav>
-                <h3 id="header-text" class="text-muted">Companionate</h3>
-            </div>
-            <div class="jumbotron">
-                <h1>Companionate </h1>
-                <h3>Premium Pet Sharing Service</h3>
-                <p class="lead"></p>
-                <p><a id="sup" class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
-                </p>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="true">
-                Pet Type<span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a class="dropdown-item" href="#">Dog</a>
-                    <li><a class="dropdown-item" href="#">Cat</a>
-                    <li><a class="dropdown-item" href="#">Fish</a>
-                    <li><a class="dropdown-item" href="#">Other</a>
+<head>
+    <title>Companionate</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+    <link href="../static/index.css" rel="stylesheet" type="text/css" >
+    <link href="../static/3-col-portfolio.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul id="header-buttons" class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a id="home-button" href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a class="sign-buttons" href="/sign_in">Sign In</a>
+                    </li>
+                    <li role="presentation"><a class="sign-buttons" href="showSignUp">Sign Up</a>
+                    </li>
                 </ul>
-            </div>
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>Bucket List</h4>
-                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-                    <h4>Bucket List</h4>
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-                    <h4>Bucket List</h4>
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Bucket List</h4>
-                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-                    <h4>Bucket List</h4>
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-                    <h4>Bucket List</h4>
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                </div>
-            </div>
-            <footer class="footer">
-                <p>&copy; Companionate 2017</p>
-            </footer>
+            </nav>
+            <h3 id="header-text" class="text-muted">Companionate</h3>
         </div>
-    </body>
-</html>
+        <div class="jumbotron">
+            <h1>Companionate </h1>
+            <h3>Premium Pet Sharing Service</h3>
+            <p class="lead"></p>
+            <p><a id="sup" class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
+            </p>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="true">
+                Pet Type<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="#">Dog</a>
+                    <li><a class="dropdown-item" href="#">Cat</a>
+                        <li><a class="dropdown-item" href="#">Fish</a>
+                            <li><a class="dropdown-item" href="#">Other</a>
+                            </ul>
+                        </div>
+                        <!-- Projects Row -->
+                        <div class="row">
+                            <div class="col-md-4 portfolio-item">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                </a>
+                                <h3>
+                                    <a href="#">Featured Floof</a>
+                                </h3>
+                                <p>Meet Valkyrie, currently residing in Montreal, who loves to play!</p>
+                            </div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                </a>
+                                <h3>
+                                    <a href="#">Featured Kitty</a>
+                                </h3>
+                                <p>Say hello to Misty, a big cuddler and real sweetheart.</p>
+                            </div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                </a>
+                                <h3>
+                                    <a href="#">Featured Cat</a>
+                                </h3>
+                                <p>Meet Angel, a free spirit but not one to turn down attention!</p>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+
+                        <!-- Projects Row -->
+                        <div class="row">
+                            <div class="col-md-4 portfolio-item">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                </a>
+                                <h3>
+                                <a href="#">Featured Pupper</a>
+                                </h3>
+                                <p>Meet Spot.</p>
+                            </div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                </a>
+                                <h3>
+                                    <a href="#">Featured Doggo</a>
+                                </h3>
+                                <p>Meet Doge.</p>
+                            </div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                </a>
+                                <h3>
+                                    <a href="#">Featured Doggo</a>
+                                </h3>
+                                <p>Meet Clifford.</p>
+                            </div>
+                        </div>
+
+                        <footer class="footer">
+                            <p>&copy; Companionate 2017</p>
+                        </footer>
+                    </div>
+                </body>
+                </html>
