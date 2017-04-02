@@ -4,6 +4,9 @@ import bcrypt
 
 app = Flask(__name__)
 
+app.config['MONGO_DBNAME'] = 'hack-princeton'
+app.config['MONGO_URL'] = 'mongodb://hack:princeton@ds149040.mlab.com:49040/hack-princeton'
+
 mongo = PyMongo(app)
 
 @app.route("/")
