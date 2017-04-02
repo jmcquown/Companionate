@@ -43,12 +43,15 @@
                     </li>
                     <li role="presentation"><a class="sign-buttons" href="/sign_in">Sign In</a>
                     </li>
-                    <li role="presentation"><a class="sign-buttons" href="showSignUp">Sign Up</a>
+                    <li role="presentation"><a class="sign-buttons" href="/sign_up">Sign Up</a>
                     </li>
                 </ul>
             </nav>
             <h3 id="header-text" class="text-muted">Companionate</h3>
         </div>
+        </br>
+        </br>
+        </br>
         </br>
 
         <div class="row">
@@ -73,6 +76,7 @@
                 <script>
                   function initMap() {
                     var uluru = {lat: -25.363, lng: 131.044};
+                     var uluru2 = {lat: -25.363, lng: 131.235};
                     var map = new google.maps.Map(document.getElementById('map'), {
                       zoom: 4,
                       center: uluru
@@ -81,6 +85,10 @@
                       position: uluru,
                       map: map
                   });
+                    var marker2 = new google.maps.Marker({
+                        position: uluru2,
+                        map: map
+                    });
                 }
             </script>
             <script async defer
